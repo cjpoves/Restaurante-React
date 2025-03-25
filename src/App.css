@@ -1,0 +1,22 @@
+.centerText{
+    text-align: center;
+}
+
+.pedidosList{
+display: grid;
+gap: 40px;
+}
+
+.pedidosContenedor {
+    display: grid;
+    justify-content: center;
+}
+.btnPedidosContenedor{
+    display: flex;
+    justify-content: center;
+}
+.btnPedidosContenedor button {
+    background-color:#B1464A ;
+    color: white;
+    padding: 20px;
+}

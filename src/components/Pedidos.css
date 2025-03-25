@@ -1,0 +1,13 @@
+.pedidoContenedor{
+width: 900px;
+}
+.productosContenedor{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 10px;
+}
+.btnEliminarPedido{
+    background-color: #EDD4B3;
+    padding: 5px;
+    font-weight: 700;
+}

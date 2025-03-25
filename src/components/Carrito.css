@@ -1,0 +1,26 @@
+.btnEnviarPedido {
+    padding: 20px;
+    background-color: #B1464A;
+    color: white;
+    font-weight: 600;
+}
+.centerBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.mesas {
+display: flex;
+justify-content: center;
+gap: 10px;
+background-color: #B1464A;
+padding: 20px;
+border-radius: 10px;
+color: white;
+font-size: large;
+}
+select {
+border: none;
+border-radius: 10px;
+background-color: #EDD4B3;
+}

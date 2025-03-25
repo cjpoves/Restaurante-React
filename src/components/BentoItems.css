@@ -1,0 +1,109 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6, 1fr));
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: 5px;
+    height: 90vh;
+
+}
+    
+
+    
+.div1 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    background-color: #EB7112;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.div2 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    background-color: salmon;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+
+}
+
+.div3 {
+    grid-column: span 6 / span 6;
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+    background-color: #B0464A;
+    border-radius: 10px;
+    
+}
+
+.div4 {
+    grid-column: span 6 / span 6;
+    grid-row-start: 5;
+    border-radius: 10px;
+    display: flex;
+}
+
+.flexContainer{
+display: grid;
+justify-content: end;
+}
+
+.sushiTable{
+    display: flex;
+    justify-content: center;
+
+}
+
+@media (max-width: 850px) {
+    svg{
+        width: 40px;
+        height: 40px;
+    }   
+    .div1 {
+        display: flex;
+        justify-content: center;
+    }
+    .div1Text {
+        display: grid;
+        justify-content: center;
+    }
+
+    .div2 {
+        display: grid;    
+    }
+
+    .flexContainer{
+        display: grid;
+        justify-content: center;
+        }
+        
+}
+
+@media (max-width: 500px) {
+    .sushiSticks svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .sushiTable  svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .div2Text {
+        font-size: small;
+
+    }
+        
+}
+.sushiIcons{
+    display: flex;
+    justify-content: end; 
+}

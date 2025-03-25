@@ -1,0 +1,24 @@
+.botones__cantidad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.botones__cantidad svg {
+    width: 30px;
+    height: 40px;
+}
+
+.ingredientes{
+    display: flex;
+    align-items: center;
+}
+
+.alert{
+    background-color: white;
+    color:black;
+    border-radius: 10px;
+    padding: 10px;
+}

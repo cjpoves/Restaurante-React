@@ -1,0 +1,41 @@
+.inputForm {
+    width: 350px;
+}
+
+@media(max-width:500px) {
+    .inputForm {
+        width: 200px;
+    }
+}
+
+.logForm{
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    background-color:  #B1464A;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+input {
+    background-color:#EDD4B3;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.buttonForm {
+    background-color: #EDD4B3;
+    padding: 20px;
+}
+
+.buttonForm:hover{
+    background-color: #B1464A;
+}
+
+
+
+.textoForm{
+    color: black;
+    margin: 0;
+}
