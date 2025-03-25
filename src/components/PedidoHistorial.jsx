@@ -7,26 +7,11 @@ import { doc, updateDoc } from 'firebase/firestore';
 
 
 
-export const Pedidos = ({pedido, obtenerPedidos}) => {
+export const PedidoHistorial = ({pedido}) => {
     const {id, estado, fecha, mesa, totalPrecio, productos } = pedido;
     const fechaFormateada = fecha?.toDate
     ? fecha.toDate().toLocaleString()
     : "Fecha no disponible";
-
-
-    const eliminarPedido = async (id) => {
-        
-            const estadoPedidoRef = doc(db, "pedidos", id);
-    
-                // Set the "capital" field of the city 'DC'
-                await updateDoc(estadoPedidoRef, {
-                estado: "completado"
-                });
-                obtenerPedidos()
-    }
-   
-
-    const dispatch = useDispatch();
 
 
     return (
@@ -49,7 +34,6 @@ export const Pedidos = ({pedido, obtenerPedidos}) => {
 
                 <div className="botones__cantidad">  
                 <h2> Precio: {totalPrecio}€</h2>
-                <button onClick={() => eliminarPedido(id)} className='btnEliminarPedido'>Eliminar Pedido</button>
                 </div>
             
             </li>

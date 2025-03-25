@@ -20,4 +20,4 @@ export const RoutesApp = () => {
             <Route path="/adminOrderHistory" element= {<AdminOrderHistory/>}/> 
         </Routes>
     )
-}
+} 
